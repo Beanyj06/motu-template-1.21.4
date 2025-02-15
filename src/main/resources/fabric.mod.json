@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "motu",
+	"version": "${version}",
+	"name": "MOTU",
+	"description": "Based on Masters of the Universe!",
+	"authors": [
+		"Beanyj06"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/motu/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.beanyj.motu.MOTU"
+		],
+		"fabric-datagen": [
+			"com.beanyj.motu.MOTUDataGenerator"
+		],
+		"client": [
+			"com.beanyj.motu.MOTUModClient"
+			]
+	},
+	"mixins": [
+		"motu.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
